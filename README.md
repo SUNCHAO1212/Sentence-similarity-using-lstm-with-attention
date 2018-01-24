@@ -28,4 +28,6 @@ This is an implement of bidirection LSTM with attention, using for estimate sent
   纵轴：{0: '丹妮', 1: '益智', 2: '动手', 3: '类', 4: '玩具', 5: '-', 6: '极速', 7: '飞车', 8: '【', 9: '小车', 10: '】'}
   ![attention heat map](https://github.com/SUNCHAO1212/Sentence-similarity-using-lstm-with-attention/blob/master/figure/0.png)
 #### 四、loss曲线
-  
+  ![loss log](https://github.com/SUNCHAO1212/Sentence-similarity-using-lstm-with-attention/blob/master/figure/character_level_lstm_with_attention_epoch_loss.png)
+#### Tips
+  损失计算中使用曼哈顿距离，单向LSTM中 output_size = 50，双向LSTM中 output_size = 25，如果过大，会导致距离趋近无穷大，难以更新参数，导致无法收敛。
