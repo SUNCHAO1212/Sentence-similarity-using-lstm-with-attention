@@ -9,7 +9,7 @@ This is an implement of bidirection LSTM with attention, using for estimate sent
 #### 一、数据准备：
   人工标注的产品和对应的句子，每个产品选出10个句子，组成数据集。
   
-  训练集：同一产品下的句子互相组成正例，不同产品的句子组成负例，格式为："sentence_a  sentence_b  label"，以"\t"分隔。
+  训练集：同一产品下的句子互相组成正例，不同产品的句子组成负例，格式为："sentence_a  sentence_b  label"，以"\t"分隔。具体数据格式见"data"文件夹
   
   测试集：选择一个产品下的某个句子，与所有产品下的一个句子计算相似度，选取相似度最高的句子所代表的产品作为分类结果，计算top5准确率
 #### 二、top5分类准确率测试结果：
