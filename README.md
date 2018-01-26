@@ -30,4 +30,4 @@ This is an implement of bidirection LSTM with attention, using for estimate sent
 #### 四、loss曲线
   ![loss log](https://github.com/SUNCHAO1212/Sentence-similarity-using-lstm-with-attention/blob/master/figure/character_level_lstm_with_attention_epoch_loss.png)
 #### Tips
-  损失计算中使用曼哈顿距离，单向LSTM中 output_size = 50，双向LSTM中 output_size = 25，如果过大，会导致距离趋近无穷大，难以更新参数，导致无法收敛。
+  损失计算中使用曼哈顿距离，单向LSTM中 output_size = 50，双向LSTM中 output_size = 25，如果过大，会导致计算的距离很大，难以更新参数，导致无法收敛。
